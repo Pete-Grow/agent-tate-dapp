@@ -97,54 +97,9 @@ solana-test-validator
 solana program deploy ./target/deploy/agent_token.so
 ```
 
-## Core Components
-
-### AI Agent System
-
-The AI agent uses CrewAI framework with several key components:
-
-```python
-class AgentCore:
-    def __init__(self):
-        self.llm = Mixtral(
-            model_path="mixtral-8x7b",
-            personality_config={
-                "assertiveness": 0.9,
-                "strategic_thinking": 0.85,
-                "community_responsiveness": 0.8
-            }
-        )
-```
-
-### Reputation System
-
-The reputation system tracks user contributions and influence:
-
-```typescript
-interface ReputationMetrics {
-    tokenHolding: number;
-    socialEngagement: number;
-    suggestionSuccess: number;
-    communityStatus: number;
-}
-```
-
-### Token Economics
-
-Token distribution and staking mechanics are implemented through Solana smart contracts:
-
-```rust
-pub struct TokenConfig {
-    pub total_supply: u64,
-    pub community_allocation: u64,
-    pub treasury_allocation: u64,
-    pub team_allocation: u64,
-}
-```
-
 ## Contributing
 
-We welcome contributions from the community! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+We welcome contributions from the community! Please read our Contributing Guidelines before submitting pull requests.
 
 ### Development Guidelines
 
@@ -205,7 +160,7 @@ Please report any security vulnerabilities to security@agenttate.com. We take al
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Support
 
